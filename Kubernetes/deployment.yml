@@ -5,7 +5,7 @@ metadata:
   labels:
     app: swiggy-app
 spec:
-  replicas: 4
+  replicas: 2
   selector:
     matchLabels:
       app: swiggy-app
@@ -17,7 +17,7 @@ spec:
       terminationGracePeriodSeconds: 300
       containers:
       - name: swiggy-app
-        image: 483216680875.dkr.ecr.us-east-1.amazonaws.com/test2:latest
+        image: 905418107736.dkr.ecr.ap-south-1.amazonaws.com/my-image
         imagePullPolicy: "Always"
         ports:
         - containerPort: 3000
